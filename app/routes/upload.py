@@ -5,15 +5,10 @@ router = APIRouter()
 
 @router.post("/upload")
 async def upload_document(file: UploadFile = File(...)):
-    # ✅ generate document id
+    #  generate document id
     document_id = str(uuid.uuid4())
 
-    # ⚠️ yaha tumhara existing logic hoga
-    # extract text
-    # chunking
-    # embedding
-    # faiss save
-    # etc.
+    
 
     print(f"Document {document_id} ingested")
 
