@@ -8,7 +8,7 @@ from slowapi.middleware import SlowAPIMiddleware
 
 app = FastAPI(title="RAG-Based Question Answering System")
 
-# ✅ CORS FIX (THIS IS THE KEY)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # allow all for demo
