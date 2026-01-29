@@ -22,7 +22,7 @@ def retrieve_chunks(document_id: str, question: str):
             continue
         chunks.append(metadata["chunks"][idx])
 
-    # 🔥 CRITICAL FALLBACK
+    
     if len(chunks) < 2:
         print("⚠️ Weak retrieval, using full document fallback")
         return metadata["chunks"][:15]
