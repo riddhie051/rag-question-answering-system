@@ -9,7 +9,7 @@ router = APIRouter()
 @router.post("/query", response_model=QueryResponse)
 @limiter.limit("5/minute")
 def query_document(
-    request: Request,          # ✅ NAME MUST BE "request"
+    request: Request,          
     body: QueryRequest
 ):
     tracker = LatencyTracker()
