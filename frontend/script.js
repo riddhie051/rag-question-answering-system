@@ -2,9 +2,7 @@ const API_BASE = "http://127.0.0.1:8000";
 
 let currentDocumentId = null;
 
-// =====================
-// Upload Document
-// =====================
+
 async function uploadFile() {
   const fileInput = document.getElementById("fileInput");
   const status = document.getElementById("uploadStatus");
@@ -41,9 +39,7 @@ async function uploadFile() {
   }
 }
 
-// =====================
-// Ask Question
-// =====================
+
 async function askQuestion() {
   const question = document.getElementById("question").value;
   const answerBox = document.getElementById("answer");
