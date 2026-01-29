@@ -1,0 +1,29 @@
+
+Tourism ML Dashboard Project
+============================
+
+Contents:
+- india_vacation_ml_dataset_with_youtube.csv  (original dataset copied)
+- model_train.py   (train two ML models and save them to models/)
+- clean_tourism.csv  (saved by model_train.py after preprocessing)
+- models/  (rf_budget.pkl, rf_popularity.pkl saved here after running model_train.py)
+- app.py  (Streamlit dashboard)
+- requirements.txt
+
+How to run:
+1) Create and activate a virtual environment (recommended)
+   python -m venv .venv
+   .venv\Scripts\activate   (Windows) or source .venv/bin/activate (mac/linux)
+
+2) Install requirements
+   pip install -r requirements.txt
+
+3) Train models (this creates models/ and clean_tourism.csv)
+   python model_train.py
+
+4) Run Streamlit app
+   streamlit run app.py
+
+Notes:
+- The app expects clean_tourism.csv and models/ to exist (created by model_train.py).
+- The app provides buttons to download the cleaned CSV and pickled models.
